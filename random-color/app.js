@@ -101,3 +101,15 @@ function changeBgColor(){
 function reset(){
     location.reload();
 }
+
+function checkScreenSize(){
+    if(smallScreen.matches){
+        colorData.style.width = "300px";
+        colorData.style.fontSize = "9px";
+        colorIdDiv.style.marginLeft = "1rem";
+    }
+}
+
+const smallScreen = window.matchMedia("(max-width: 450px)");
+checkScreenSize();
+smallScreen.addEventListener(checkScreenSize);
