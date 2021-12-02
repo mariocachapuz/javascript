@@ -110,6 +110,6 @@ function checkScreenSize(){
     }
 }
 
-const smallScreen = window.matchMedia("(max-width: 685px)");
+const smallScreen = window.matchMedia("(max-width: 799px)");
 checkScreenSize();
 smallScreen.addEventListener(checkScreenSize);
