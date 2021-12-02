@@ -106,6 +106,7 @@ function checkScreenSize(){
     if(smallScreen.matches){
         colorData.style.width = "300px";
         colorData.style.fontSize = "9px";
+        colorData.style.justifyContent = "space-around";
         colorIdDiv.style.marginLeft = "1rem";
     }
 }
